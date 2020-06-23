@@ -1,0 +1,21 @@
+{
+  "name": "create-excel-sheet-using-vanila",
+  "version": "1.0.0",
+  "description": "Create Excel Sheet and Perform Read/Write operation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --mode development --open",
+    "prod": "webpack -p && node server.js"
+  },
+  "author": "Pushp Singh",
+  "license": "MIT",
+  "dependencies": {
+    "css-loader": "^3.5.3",
+    "script-loader": "^0.7.2",
+    "style-loader": "^1.2.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0"
+  }
+}

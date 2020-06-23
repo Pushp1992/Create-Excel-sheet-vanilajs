@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href=/public/favicon.ico type=image/x-icon />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Credit Card Validation</title>
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="stylesheet" href="./src/styles/excel.css" />
+  </head>
+  <body>
+
+
+    <ul>
+      <p>Features:</p>
+      <li>Under 30 lines of vanilla JavaScript</li>
+      <li>Libraries used: <strong>none</strong></li>
+      <li>Excel-like syntax (formulas start with "=")</li>
+      <li>Support for arbitrary expressions (=A1+B2*C3)</li>
+      <li>Circular reference prevention</li>
+      <li>Automatic localStorage persistence</li>
+    </ul>
+
+    <input type="text" name="rows count" id="rowCount" placeholder="enter rows count"/>
+    <input type="text" name="col count" id="colCount" placeholder="enter columns count"/>
+    <button id="generate-btn" name="generateFile" onclick="generateExcel(event)">Generate Excel Sheet</button>
+  <br/><br/><br/>
+
+    <table></table>
+
+    <footer>
+      <p>&copy; VIACOM18 assignment purpose only</a></p>
+    </footer>
+
+    
+    <script src="./src/index.js"></script>
+    <script src="./src//scripts//excelGenerator.js"></script>
+  </body>
+</html>
