@@ -54,13 +54,13 @@ let cCount = localStorage.getItem('colCount');
 for (var i = 0; i <= rCount; i++) {
     var row = document.querySelector("table").insertRow(-1);
 
-    var cell1 = row.insertCell(-1);
-    var button = document.createElement("input");
-    button.setAttribute("type", "button")
-    button.setAttribute("name", "Delete");
-    button.setAttribute("value", "del");
-    button.setAttribute("onclick", `removeRow()`);
-    cell1.appendChild(button);
+    // var cell1 = row.insertCell(-1);
+    // var button = document.createElement("input");
+    // button.setAttribute("type", "button")
+    // button.setAttribute("name", "Delete");
+    // button.setAttribute("value", "del");
+    // button.setAttribute("onclick", `removeRow()`);
+    // cell1.appendChild(button);
 
     for (var j = 0; j <= cCount; j++) {
         var letter = String.fromCharCode("A".charCodeAt(0) + j - 1);
