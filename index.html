@@ -14,20 +14,26 @@
 
     <ul>
       <p>Features:</p>
-      <li>Under 30 lines of vanilla JavaScript</li>
-      <li>Libraries used: <strong>none</strong></li>
+      <li>Add/remove rows or columns to/from the existing sheet</li>
+      <li>Editable and readonly cell</li>
       <li>Excel-like syntax (formulas start with "=")</li>
       <li>Support for arbitrary expressions (=A1+B2*C3)</li>
-      <li>Circular reference prevention</li>
       <li>Automatic localStorage persistence</li>
     </ul>
 
-    <input type="text" name="rows count" id="rowCount" placeholder="enter rows count"/>
-    <input type="text" name="col count" id="colCount" placeholder="enter columns count"/>
+    <input type="number" name="rows count" id="rowCount" placeholder="enter rows count"/>
+    <input type="number" name="col count" id="colCount" placeholder="enter columns count"/>
     <button id="generate-btn" name="generateFile" onclick="generateExcel(event)">Generate Excel Sheet</button>
-  <br/><br/><br/>
+    <button id="clear-btn" name="clearExcel" onclick="clearExcelFile(event)">Clear Excel Sheet</button>
+    <br/><br/>
+    <input type="button" value="Add Row" onclick="addRow('excelSheetTable')" />
+    <br/>
 
-    <table></table>
+ 
+   <div>
+    <header style="background-color: green;">This is header</header>
+    <table id="excelSheetTable"></table>
+   </div>
 
     <footer>
       <p>&copy; VIACOM18 assignment purpose only</a></p>

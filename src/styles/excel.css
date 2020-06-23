@@ -43,3 +43,9 @@ tr:first-child td, td:first-child {
 footer {
     font-size: 80%;
 }
+
+header {
+    /* display: table-row-group; */
+    vertical-align: middle;
+    border-color: inherit;
+}
