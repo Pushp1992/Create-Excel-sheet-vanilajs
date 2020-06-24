@@ -26,10 +26,14 @@
     <button id="generate-btn" name="generateFile" onclick="generateExcel(event)">Generate Excel Sheet</button>
     <button id="clear-btn" name="clearExcel" onclick="clearExcelFile(event)">Clear Excel Sheet</button>
     <br/><br/>
-    <input type="button" value="Add Row" onclick="addRow('excelSheetTable')" />
-    <br/>
 
     <table id="excelSheetTable"></table>
+    <br/><br/>
+    <input type="button" id="addRowBtn" value="Add Row" onclick="addRow(event)" />
+    <input type="button" id="removeRowBtn" value="Remove Row" onclick="removeRow(event)" />
+    &nbsp;&nbsp;&nbsp;
+    <input type="button" id="addColBtn" value="Add Col" onclick="addColumn(event)" />
+    <input type="button" id="removeColBtn" value="Remove Col" onclick="removeColumn(event)" />
 
     <footer>
       <p>&copy; VIACOM18 assignment purpose only</a></p>
